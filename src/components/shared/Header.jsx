@@ -78,7 +78,7 @@ const Header = () => {
             <img src="/logo.svg" alt="car-doctor-logo" />
           </Link>
           <div className="flex-1 text-center hidden lg:block">
-            <div className="menu menu-horizontal items-center text-lg text-dark-002 font-semibold *:px-5 *:py-2">
+            <div className="menu menu-horizontal items-center text-lg text-dark-002 font-semibold *:px-5 *:py-2 hover:*:text-red-811">
               {/* Navbar menu content here */}
               {navlist}
             </div>

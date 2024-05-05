@@ -5,7 +5,9 @@ const Root = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <main className="mx-auto container xl:max-w-[1140px] px-4 font-inter">
+        <Outlet />
+      </main>
     </>
   );
 };
