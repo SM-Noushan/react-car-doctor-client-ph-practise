@@ -1,6 +1,6 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
+import MyButton from "./MyButton";
 
 const Banner = () => {
   return (
@@ -12,14 +12,18 @@ const Banner = () => {
         There are many variations of passages of available, but <br /> the
         majority have suffered alteration in some form
       </p>
-      <div className="flex gap-4">
-        <button className="px-6 btn bg-red-811 hover:bg-red-811/80 lg:text-lg text-white font-semibold border-red-811">
-          Discover More
-        </button>
-        <button className="px-6 btn bg-transparent hover:bg-white/20 lg:text-lg text-white font-semibold">
-          Latest Project
-        </button>
-      </div>
+      {
+        <div className="flex gap-4">
+          <MyButton
+            label="Discover More"
+            css="bg-red-811 hover:bg-red-811/80 text-white border-red-811"
+          />
+          <MyButton
+            label="Latest Project"
+            css="bg-transparent hover:bg-white/20 text-white"
+          />
+        </div>
+      }
       <Swiper
         className="absolute inset-0 rounded-lg -z-10"
         loop={true}
